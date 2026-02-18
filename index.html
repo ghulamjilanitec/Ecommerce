@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Official clothing website</title>
+  <!--CSS link-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--Font Family Poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--Font awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img src="https://wearzane.com/cdn/shop/files/logotype_zane-01_80b8f223-4764-4a13-a8b2-83553388afdd_100x@2x.png?v=1766402987" width="80" alt="Al-Ghiza">
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./allproduct.html">All shop Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+        <i class="fa-solid fa-cart-shopping fa-lg" style="color: black; padding-right: 80px;"></i>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="bg-light">
+    <div class="container text-black">
+      <h1 class="fw-bold">Clothing By ZANE</h1>
+      <p class="lead">Timeless Casual Wear for Modern Women</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center d-flex flex-column-reverse flex-md-row">
+        <div class="col-md-6 mt-3">
+          <h2 class="semi-heading">Women’s Casual Top</h2>
+          <p>This women’s casual top offers a clean, modern, and comfortable everyday look. Designed with simplicity and elegance in mind, it is suitable for daily wear and relaxed outings.
+
+Made from soft and breathable fabric, this striped knit top provides all-day comfort. The light base color combined with contrasting horizontal stripes gives it a stylish yet minimal appearance. Featuring short sleeves and a relaxed fit, it is easy to wear and perfect for casual wear, office-casual settings, or weekend outings. Pair it effortlessly with jeans or trousers for a smart, casual look.
+
+Key Features:
+
+Soft and breathable fabric
+
+Trendy horizontal stripe design
+
+Short sleeves with a relaxed fit
+
+Ideal for daily wear and casual outings
+
+Easy to style with jeans or pants
+          </p>
+          <button class="btn about">Shop Now</button>
+        </div>
+        <div class="col-md-6 text-center ">
+          <img src="https://wearzane.com/cdn/shop/files/women_striped-women_bottom_02_front-women_footwear_4_front-Erica-Stucco_Wall_1_1800x1800.webp?v=1768474993" class="img-fluid about" alt="About Al-Ghiza">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="bg-light">
+    <div class="container">
+      <h2 class="text-center semi-heading">Our Products</h2>
+      <div class="row mt-4 g-4">
+        <div class="col-md-4">
+          <div class="card product-card p-3 text-center">
+            <img src="https://wearzane.com/cdn/shop/files/BROWN_TOP_4_670x.png?v=1768457913" class="img-fluid mb-3 rounded" height="10" alt="Premium Atta">
+            <h5>Sweet Heart Neck Top - Chocolate Brown</h5>
+            <button class="add-cart-btn" onclick="openCartModal('Talbina', 1.5)">
+   Order Now🛒
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card p-3 text-center">
+            <img src="https://wearzane.com/cdn/shop/files/ZS_01614_1800x1800.png?v=1752562612" class="img-fluid mb-3 rounded" alt="Wheat Flour">
+            <h5>Diamond Texture Polo Shirt – Navy Blue</h5>
+            <button class="add-cart-btn" onclick="openCartModal('Talbina', 1.5)">
+   Order Now🛒
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card p-3 text-center">
+            <img src="https://wearzane.com/cdn/shop/files/IMG_1863_1800x1800.heic?v=1769758367" class="img-fluid mb-3 rounded"
+              alt="Organic Grains">
+            <h5>Satin Button-down Shirt - Chocolate Brown
+</h5>
+            <button class="add-cart-btn" onclick="openCartModal('Talbina', 1.5)">
+   Order Now🛒
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery">
+      <div class="container mt-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 text-lg-center px-0">
+            <img src="https://judgeme.imgix.net/zane/1715421351__img20240511110627__original.jpg?auto=format&w=1024" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 mt-3">
+            <h2 class="semi-heading">Comfort & Style Benefits</h2>
+            <p>Our clothing is thoughtfully designed to deliver everyday comfort with timeless style. Crafted from soft, breathable fabrics, each piece feels gentle on the skin while allowing ease of movement throughout the day. The balanced fit and clean silhouettes make our apparel suitable for daily wear, work settings, and casual outings. By focusing on quality materials and simple, modern designs, our clothing offers lasting comfort, effortless styling, and confidence you can feel the moment you wear it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+function openCartModal(name, price){
+  document.getElementById("cartModal").style.display = "flex";
+  document.getElementById("productName").innerText = name;
+  document.getElementById("productPrice").innerText = price;
+}
+
+function closeCartModal(){
+  document.getElementById("cartModal").style.display = "none";
+}
+
+function addToCart(){
+  alert("Product added to cart ✅");
+  closeCartModal();
+}
+</script>
+  <!-- Why Us -->
+  <section id="why">
+    <div class="container">
+      <h2 class="text-center semi-heading">Why Choose Our Clothing</h2>
+      <div class="row text-center mt-5">
+        <div class="col-md-4 px-5">
+          <div class="whyus py-3">
+            <i class="fa-solid fa-leaf fa-2x mb-2" style="color: green;"></i>
+            <h5>🧵 Premium Fabric</h5>
+            <p>Soft, breathable materials for all-day comfort</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 px-5">
+          <div class="whyus py-3">
+            <i class="fa-solid fa-heart-pulse fa-2x mb-2" style="color: red;"></i>
+            <h5>👗 Modern Fit</h5>
+            <p>Designed for a clean, flattering everyday look</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 px-5">
+          <div class="whyus py-3">
+            <i class="fa-solid fa-users fa-2x mb-2" style="color: #5c5757;"></i>
+            <h5>✨ High Quality
+</h5>
+            <p>No compromise on fabric and stitching</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+   <section id="Contact">
+  <div class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <div class="info-item">
+                <span>📍 Karachi, Pakistan</span>
+            </div>
+            <div class="info-item">
+                <span>📧 support@al-ghiza.com</span>
+            </div>
+            <div class="info-item">
+                <span>📞 +92 300 1234567</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Subject</label>
+                </div>
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>How can we help you?</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+  <!-- Footer -->
+  <footer class="pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Brand -->
+        <div class="col-md-4 mb-4">
+          <img src="./images/LOG0.png" height="50" alt="Al-Ghiza" class="mb-3">
+          <p>Al-Ghiza provides premium quality food and nutrition products made from pure grains, ensuring health and
+            trust for every family.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-decoration-none text-warning">Home</a></li>
+            <li><a href="#about" class="text-decoration-none text-warning">About</a></li>
+            <li><a href="#products" class="text-decoration-none text-warning">Products</a></li>
+            <li><a href="#contact" class="text-decoration-none text-warning">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-3">Contact Info</h5>
+          <p class="mb-1">📍 Pakistan</p>
+          <p class="mb-1">📞 +92 300 0000000</p>
+          <p class="mb-1">✉️ info@alghiza.com</p>
+        </div>
+      </div>
+
+      <hr class="border-warning">
+
+      <div class="text-center pb-3">
+        <p class="mb-0">© 2026 <strong>Al-Ghiza</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="cart-modal" id="cartModal">
+  <div class="cart-box">
+    <h2 id="productName"></h2>
+    <p>Price: Pkr 2200<span id="productPrice"></span></p>
+
+    <label>Quantity</label>
+    <input type="number" value="1" min="1">
+
+    <div class="actions">
+      <button onclick="addToCart()">Add to Cart</button>
+      <button class="close" onclick="closeCartModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
